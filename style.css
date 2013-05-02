@@ -1,0 +1,99 @@
+/* first things first */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: #000;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  height: 100%;
+  background:url('background.jpg') #000 no-repeat;
+}
+
+h1 {
+  font-size: 3.33em;
+  letter-spacing: -1px;
+  line-height: 1em;
+  margin: 0;
+  color: #333;
+}
+
+
+h2 {
+  font-size: 1.33em;
+  letter-spacing: -1px;
+  color: #005774;
+}
+
+h1,
+h2 {
+  margin-left: 110px;
+}
+
+a:link {
+
+  font-weight: bold;
+  color: #fff;
+}
+
+
+hr {
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.wrap {
+  background: rgba(256, 256, 256, 0.9);
+  height: 100%;
+  width: 550px;
+  margin: 0 15%;
+  padding: 1em 3em;
+}
+
+.content {
+  margin-top: 1em;
+  padding: 1.5em 0 10px 0;
+  border-top: 7px solid #000;
+}
+
+.logo {
+  width: 106px;
+  float: left;
+}
+
+.where {
+  display: inline-block;
+}
+
+
+
+@media (max-width: 605px) {
+  .wrap {
+    margin: auto;
+    padding: 1em;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    letter-spacing: -1px;
+  }
+  
+  
+  h1, 
+  h2 {
+    margin-left: 90px;
+  }
+  
+  .logo {
+    width: 80px;
+  }
+}
