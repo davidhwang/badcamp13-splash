@@ -8,6 +8,11 @@
 
 html {
   height: 100%;
+  background-color: #000;
+  /* iOS device orientation-switch font size lameness */
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
@@ -16,6 +21,14 @@ body {
   height: 100%;
   background:url('background.jpg') #000 no-repeat;
 }
+
+a:link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+
 
 h1 {
   font-size: 3.33em;
@@ -37,17 +50,12 @@ h2 {
   margin-left: 110px;
 }
 
-a:link {
-
-  font-weight: bold;
-  color: #fff;
-}
-
-
 hr {
   box-shadow: none;
   border: none;
   border-bottom: 1px solid #333;
+  clear: both;
+  margin: 1em 0;
 }
 
 .wrap {
@@ -73,13 +81,67 @@ hr {
   display: inline-block;
 }
 
+.title {
+  float: left;
+}
+
+.contents {
+  margin-left: 110px;
+}
+
+.quieter {
+  font-size: .80em;
+}
 
 
+
+/* style overrides for the mailchimp signup form */
+#mc_embed_signup {
+  background: transparent; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif;
+}
+
+#mc_embed_signup input[type="email"] {
+  width: 100%;
+  background: #333;
+  border: none;
+  color: #fff;
+}
+
+
+#mc_embed_signup input[type="submit"] {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: none;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  text-align: left;
+}
+
+#mc_embed_signup input[type="submit"]:hover {
+  background: transparent;
+  color: #777;
+}
+
+#mc_embed_signup form {
+  margin-left: 110px;
+  padding: 0;
+
+}
+
+
+
+/* media query stuff goes here */
 @media (max-width: 605px) {
   .wrap {
     margin: auto;
     padding: 1em;
     width: 100%;
+    min-height: 600px;
   }
 
   h1 {
@@ -89,7 +151,9 @@ hr {
   
   
   h1, 
-  h2 {
+  h2,
+  #mc_embed_signup form,
+  .contents {
     margin-left: 90px;
   }
   
