@@ -139,6 +139,12 @@ hr {
 }
 
 
+/* somewhat esoteric fix for 100% height issues with smaller vertical heights */
+body,
+.wrap {
+  min-height: 700px;
+}
+
 
 /* media query stuff goes here */
 @media (max-width: 605px) {
