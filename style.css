@@ -16,13 +16,15 @@ html {
 }
 
 body {
-  color: #000;
+  color: #333;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   height: 100%;
   background:url('background.jpg') #000 no-repeat;
 }
 
-a:link {
+a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -31,7 +33,7 @@ a:link {
 
 
 h1 {
-  font-size: 3.33em;
+  font-size: 4em;
   letter-spacing: -1px;
   line-height: 1em;
   margin: 0;
@@ -40,7 +42,8 @@ h1 {
 
 
 h2 {
-  font-size: 1.33em;
+  font-size: 1.75em;
+  line-height: 1.15em;
   letter-spacing: -1px;
   color: #005774;
 }
@@ -55,7 +58,7 @@ hr {
   border: none;
   border-bottom: 1px solid #333;
   clear: both;
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 .wrap {
@@ -69,7 +72,7 @@ hr {
 .content {
   margin-top: 1em;
   padding: 1.5em 0 10px 0;
-  border-top: 7px solid #000;
+  border-top: 7px solid #333;
 }
 
 .logo {
@@ -90,7 +93,7 @@ hr {
 }
 
 .quieter {
-  font-size: .80em;
+  color: #888;
 }
 
 
@@ -145,10 +148,14 @@ hr {
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     letter-spacing: -1px;
   }
   
+  
+  h2 {
+    font-size: 1.25em;
+  }
   
   h1, 
   h2,
