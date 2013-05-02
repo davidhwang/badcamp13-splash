@@ -145,7 +145,7 @@ hr {
     margin: auto;
     padding: 1em;
     width: 100%;
-    min-height: 900px;
+    min-height: 950px;
   }
 
   h1 {
@@ -161,7 +161,8 @@ hr {
   h1, 
   h2,
   #mc_embed_signup form,
-  .contents {
+  .contents,
+  p {
     margin-left: 90px;
   }
   
